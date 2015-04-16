@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.8)  15 APR 2015 19:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.8)  17 APR 2015 01:12
 entering extended mode
 **C:/Users/Simon/Documents/GitHub/ProjetMS2015/Rapport.tex
 (C:/Users/Simon/Documents/GitHub/ProjetMS2015/Rapport.tex
@@ -187,7 +187,7 @@ Package babel Info: Making ? an active character on input line 123.
 *
 (C:\Users\Simon\Documents\Latex\tex\generic\babel\frenchb.cfg)))
 (C:\Users\Simon\Documents\Latex\tex\latex\carlisle\scalefnt.sty)
-\c@exercice=\count103
+\c@partie=\count103
 
 (C:\Users\Simon\Documents\GitHub\ProjetMS2015\Rapport.aux)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
@@ -233,21 +233,24 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 {C:/Users/Simon/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (C:\Users\Simon\Documents\GitHub\ProjetMS2015\Rapport.aux) ) 
 Here is how much of TeX's memory you used:
- 3066 strings out of 493921
- 38303 string characters out of 3146079
- 92936 words of memory out of 3000000
- 6326 multiletter control sequences out of 15000+200000
- 10886 words of font info for 36 fonts, out of 3000000 for 9000
+ 3076 strings out of 493921
+ 38411 string characters out of 3146079
+ 94936 words of memory out of 3000000
+ 6332 multiletter control sequences out of 15000+200000
+ 13901 words of font info for 40 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,6n,26p,280b,201s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,6n,26p,535b,201s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Simon\Ap
 pData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\User
-s\Simon\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1200.pk
+s\Simon\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk
 > <C:\Users\Simon\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-crm1728.pk>
-Output written on Rapport.pdf (1 page, 19058 bytes).
+cbx1095.pk> <C:\Users\Simon\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
+c\dpi600\ecbx1440.pk> <C:\Users\Simon\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
+jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Simon\AppData\Local\MiKTeX\2.9\fonts\
+pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk>
+Output written on Rapport.pdf (1 page, 47442 bytes).
 PDF statistics:
- 64 PDF objects out of 1000 (max. 8388607)
+ 150 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
