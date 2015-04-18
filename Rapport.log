@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.8)  17 APR 2015 14:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.8)  18 APR 2015 16:13
 entering extended mode
 **C:/Users/Simon/Documents/GitHub/ProjetMS2015/Rapport.tex
 (C:/Users/Simon/Documents/GitHub/ProjetMS2015/Rapport.tex
@@ -15,8 +15,8 @@ an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
 ishmax, welsh, loaded.
 (C:\Users\Simon\Documents\Latex\tex\latex\base\article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-(C:\Users\Simon\Documents\Latex\tex\latex\base\size11.clo
-File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+(C:\Users\Simon\Documents\Latex\tex\latex\base\size12.clo
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
 \c@section=\count80
@@ -30,21 +30,14 @@ File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:\Users\Simon\Documents\Latex\tex\latex\base\inputenc.sty
-Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks14
-\inpenc@posthook=\toks15
-
-(C:\Users\Simon\Documents\Latex\tex\latex\base\latin1.def
-File: latin1.def 2008/03/30 v1.1d Input encoding file
-))
-(C:\Users\Simon\Documents\Latex\tex\latex\base\fontenc.sty
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-
-(C:\Users\Simon\Documents\Latex\tex\latex\base\t1enc.def
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
-))
+(C:\Users\Simon\Documents\Latex\tex\latex\amsfonts\amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks14
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
 (C:\Users\Simon\Documents\Latex\tex\latex\amsmath\amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip43
@@ -55,7 +48,7 @@ Package: amstext 2000/06/29 v2.01
 
 (C:\Users\Simon\Documents\Latex\tex\latex\amsmath\amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks16
+\@emptytoks=\toks15
 \ex@=\dimen103
 ))
 (C:\Users\Simon\Documents\Latex\tex\latex\amsmath\amsbsy.sty
@@ -85,44 +78,39 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \dotsspace@=\muskip10
 \c@parentequation=\count94
 \dspbrk@lvl=\count95
-\tag@help=\toks17
+\tag@help=\toks16
 \row@=\count96
 \column@=\count97
 \maxfields@=\count98
-\andhelp@=\toks18
+\andhelp@=\toks17
 \eqnshift@=\dimen106
 \alignsep@=\dimen107
 \tagshift@=\dimen108
 \tagwidth@=\dimen109
 \totwidth@=\dimen110
 \lineht@=\dimen111
-\@envbody=\toks19
+\@envbody=\toks18
 \multlinegap=\skip44
 \multlinetaggap=\skip45
-\mathdisplay@stack=\toks20
+\mathdisplay@stack=\toks19
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
 (C:\Users\Simon\Documents\Latex\tex\latex\amsfonts\amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-
-(C:\Users\Simon\Documents\Latex\tex\latex\amsfonts\amsfonts.sty
-Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
-\symAMSa=\mathgroup4
-\symAMSb=\mathgroup5
-LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
-(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-))
-(C:\Users\Simon\Documents\Latex\tex\latex\preprint\fullpage.sty
-Package: fullpage 1999/02/23 1.1 (PWD)
-\FP@margin=\skip46
+)
+(C:\Users\Simon\Documents\Latex\tex\latex\base\latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
 )
 (C:\Users\Simon\Documents\Latex\tex\latex\graphics\graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
 (C:\Users\Simon\Documents\Latex\tex\latex\graphics\keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
-\KV@toks@=\toks21
+\KV@toks@=\toks20
 )
 (C:\Users\Simon\Documents\Latex\tex\latex\graphics\graphics.sty
 Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
@@ -149,13 +137,19 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-(C:\Users\Simon\Documents\Latex\tex\latex\url\url.sty
-\Urlmuskip=\muskip11
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+(C:\Users\Simon\Documents\Latex\tex\latex\graphics\epsfig.sty
+Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
+\epsfxsize=\dimen114
+\epsfysize=\dimen115
 )
-(C:\Users\Simon\Documents\Latex\tex\latex\tools\xspace.sty
-Package: xspace 2009/10/20 v1.13 Space after command names (DPC,MH)
-)
+(C:\Users\Simon\Documents\Latex\tex\latex\base\inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks21
+\inpenc@posthook=\toks22
+
+(C:\Users\Simon\Documents\Latex\tex\latex\base\latin1.def
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
 (C:\Users\Simon\Documents\Latex\tex\generic\babel\babel.sty
 Package: babel 2008/07/08 v3.8m The Babel package
 
@@ -171,91 +165,222 @@ Language: frenchb 2009/03/16 v2.3d French support from the babel system
 (C:\Users\Simon\Documents\Latex\tex\generic\babel\babel.def
 File: babel.def 2008/07/08 v3.8m Babel common definitions
 \babel@savecnt=\count100
-\U@D=\dimen114
+\U@D=\dimen116
 )
 Package babel Info: Making : an active character on input line 120.
 Package babel Info: Making ; an active character on input line 121.
 Package babel Info: Making ! an active character on input line 122.
 Package babel Info: Making ? an active character on input line 123.
-\FB@Mht=\dimen115
+\FB@Mht=\dimen117
 \std@mcc=\count101
 \dec@mcc=\count102
-\parindentFFN=\dimen116
+\parindentFFN=\dimen118
 
 *************************************
 * Local config file frenchb.cfg used
 *
 (C:\Users\Simon\Documents\Latex\tex\generic\babel\frenchb.cfg)))
 (C:\Users\Simon\Documents\Latex\tex\latex\carlisle\scalefnt.sty)
-\c@partie=\count103
-
-(C:\Users\Simon\Documents\GitHub\ProjetMS2015\Rapport.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
-LaTeX Font Info:    ... okay on input line 35.
-
-(C:\Users\Simon\Documents\Latex\tex\context\base\supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count104
-\scratchdimen=\dimen117
-\scratchbox=\box28
-\nofMPsegments=\count105
-\nofMParguments=\count106
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count107
-\MPscratchDim=\dimen118
-\MPnumerator=\count108
-\makeMPintoPDFobject=\count109
-\everyMPtoPDFconversion=\toks23
+(C:\Users\Simon\Documents\Latex\tex\latex\base\exscale.sty
+Package: exscale 2007/10/29 v2.1h Standard LaTeX package exscale
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 52.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 52.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/cmex/m/n on input line 52.
+\big@size=\dimen119
 )
-LaTeX Info: Redefining \degres on input line 35.
-LaTeX Info: Redefining \dots on input line 35.
-LaTeX Info: Redefining \up on input line 35.
-LaTeX Font Info:    Try loading font information for U+msa on input line 39.
- (C:\Users\Simon\Documents\Latex\tex\latex\amsfonts\umsa.fd
+(C:\Users\Simon\Documents\Latex\tex\latex\fancyhdr\fancyhdr.sty
+\fancy@headwidth=\skip46
+\f@ncyO@elh=\skip47
+\f@ncyO@erh=\skip48
+\f@ncyO@olh=\skip49
+\f@ncyO@orh=\skip50
+\f@ncyO@elf=\skip51
+\f@ncyO@erf=\skip52
+\f@ncyO@olf=\skip53
+\f@ncyO@orf=\skip54
+)
+(C:\Users\Simon\Documents\GitHub\ProjetMS2015\Rapport.aux
+
+LaTeX Warning: Label `graph1' multiply defined.
+
+
+LaTeX Warning: Label `graph1' multiply defined.
+
+
+LaTeX Warning: Label `graph1' multiply defined.
+
+
+LaTeX Warning: Label `graph1' multiply defined.
+
+
+LaTeX Warning: Label `graph1' multiply defined.
+
+)
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+ (C:\Users\Simon\Documents\Latex\tex\context\base\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count103
+\scratchdimen=\dimen120
+\scratchbox=\box28
+\nofMPsegments=\count104
+\nofMParguments=\count105
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count106
+\MPscratchDim=\dimen121
+\MPnumerator=\count107
+\makeMPintoPDFobject=\count108
+\everyMPtoPDFconversion=\toks24
+)
+LaTeX Info: Redefining \degres on input line 37.
+LaTeX Info: Redefining \dots on input line 37.
+LaTeX Info: Redefining \up on input line 37.
+
+
+Package frenchb.ldf Warning: OT1 encoding should not be used for French. 
+(frenchb.ldf)                Add \usepackage[T1]{fontenc} to the preamble
+(frenchb.ldf)                of your document, on input line 37.
+
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <7> on input line 41.
+LaTeX Font Info:    Try loading font information for U+msa on input line 41.
+(C:\Users\Simon\Documents\Latex\tex\latex\amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 39.
+LaTeX Font Info:    Try loading font information for U+msb on input line 41.
 
 (C:\Users\Simon\Documents\Latex\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 41.
 
-{C:/Users/Simon/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(C:\Users\Simon\Documents\GitHub\ProjetMS2015\Rapport.aux) ) 
+(C:\Users\Simon\Documents\Latex\tex\latex\base\ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+LaTeX Font Info:    External font `cmex7' loaded for size
+(Font)              <6> on input line 52.
+
+Underfull \hbox (badness 10000) in paragraph at lines 50--56
+
+ []
+
+<figures/Graph_P2Q2.pdf, id=1, 1027.84pt x 489.83pt>
+File: figures/Graph_P2Q2.pdf Graphic file (type pdf)
+
+<use figures/Graph_P2Q2.pdf>
+Package pdftex.def Info: figures/Graph_P2Q2.pdf used on input line 63.
+(pdftex.def)             Requested size: 455.24408pt x 216.95343pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 67--71
+
+ []
+
+[1
+
+{C:/Users/Simon/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Si
+mon/Documents/GitHub/ProjetMS2015/figures/Graph_P2Q2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 72--76
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--81
+
+ []
+
+
+Overfull \hbox (9.26242pt too wide) in paragraph at lines 92--96
+[]\OT1/cmr/m/n/12 Moyenne des biais EMV 0.08228447 Moyenne des biais ESBVM -0.1
+193612 Moyenne
+ []
+
+
+Overfull \hbox (5.3458pt too wide) in paragraph at lines 96--100
+[]\OT1/cmr/m/n/12 Moyenne des biais EMV 0.1657237 Moyenne des biais ESBVM 0.064
+06643 Moyenne
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--105
+
+ []
+
+<figures/GraphP2Q31.pdf, id=19, 1027.84pt x 489.83pt>
+File: figures/GraphP2Q31.pdf Graphic file (type pdf)
+
+<use figures/GraphP2Q31.pdf>
+Package pdftex.def Info: figures/GraphP2Q31.pdf used on input line 113.
+(pdftex.def)             Requested size: 455.24408pt x 216.95343pt.
+
+<figures/GraphP2Q32.pdf, id=20, 1027.84pt x 489.83pt>
+File: figures/GraphP2Q32.pdf Graphic file (type pdf)
+
+<use figures/GraphP2Q32.pdf>
+Package pdftex.def Info: figures/GraphP2Q32.pdf used on input line 120.
+(pdftex.def)             Requested size: 455.24408pt x 216.95343pt.
+
+<figures/GraphP2Q33.pdf, id=21, 1027.84pt x 489.83pt>
+File: figures/GraphP2Q33.pdf Graphic file (type pdf)
+
+<use figures/GraphP2Q33.pdf>
+Package pdftex.def Info: figures/GraphP2Q33.pdf used on input line 127.
+(pdftex.def)             Requested size: 455.24408pt x 216.95343pt.
+
+<figures/GraphP2Q34.pdf, id=22, 1027.84pt x 489.83pt>
+File: figures/GraphP2Q34.pdf Graphic file (type pdf)
+
+<use figures/GraphP2Q34.pdf>
+Package pdftex.def Info: figures/GraphP2Q34.pdf used on input line 134.
+(pdftex.def)             Requested size: 455.24408pt x 216.95343pt.
+
+<figures/GraphP2Q35.pdf, id=23, 1027.84pt x 489.83pt>
+File: figures/GraphP2Q35.pdf Graphic file (type pdf)
+
+<use figures/GraphP2Q35.pdf>
+Package pdftex.def Info: figures/GraphP2Q35.pdf used on input line 141.
+(pdftex.def)             Requested size: 455.24408pt x 216.95343pt.
+ [2] [3 <C:/Users/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q31.pdf> <
+C:/Users/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q32.pdf>] [4 <C:/Us
+ers/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q33.pdf> <C:/Users/Simon
+/Documents/GitHub/ProjetMS2015/figures/GraphP2Q34.pdf>] [5 <C:/Users/Simon/Docu
+ments/GitHub/ProjetMS2015/figures/GraphP2Q35.pdf>]
+(C:\Users\Simon\Documents\GitHub\ProjetMS2015\Rapport.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 3081 strings out of 493921
- 38495 string characters out of 3146079
- 94936 words of memory out of 3000000
- 6337 multiletter control sequences out of 15000+200000
- 15149 words of font info for 45 fonts, out of 3000000 for 9000
+ 2966 strings out of 493921
+ 38301 string characters out of 3146079
+ 99311 words of memory out of 3000000
+ 6216 multiletter control sequences out of 15000+200000
+ 12499 words of font info for 52 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,6n,26p,562b,201s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Simon\Ap
-pData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecrm1095.pk> <C:\User
-s\Simon\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ecti1095.pk
-> <C:\Users\Simon\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\e
-cbx1095.pk> <C:\Users\Simon\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\e
-c\dpi600\ecbx1440.pk> <C:\Users\Simon\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\
-jknappen\ec\dpi600\ecrm1200.pk> <C:\Users\Simon\AppData\Local\MiKTeX\2.9\fonts\
-pk\ljfour\jknappen\ec\dpi600\ecrm1728.pk><C:/Users/Simon/Documents/Latex/fonts/
-type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Simon/Documents/Latex/fonts/type1
-/public/amsfonts/cm/cmmi8.pfb><C:/Users/Simon/Documents/Latex/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb><C:/Users/Simon/Documents/Latex/fonts/type1/public/amsf
-onts/cm/cmr8.pfb><C:/Users/Simon/Documents/Latex/fonts/type1/public/amsfonts/cm
-/cmsy8.pfb>
-Output written on Rapport.pdf (1 page, 86587 bytes).
+ 27i,6n,43p,559b,315s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Simon/Documents/Latex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:
+/Users/Simon/Documents/Latex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Use
+rs/Simon/Documents/Latex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Si
+mon/Documents/Latex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Simon/Do
+cuments/Latex/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Simon/Document
+s/Latex/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Simon/Documents/Late
+x/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Simon/Documents/Latex/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Simon/Documents/Latex/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb>
+Output written on Rapport.pdf (5 pages, 116448 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
+ 85 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

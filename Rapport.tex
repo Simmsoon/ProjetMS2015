@@ -1,29 +1,31 @@
-% definit le type de document et ses options
-\documentclass[a4paper,11pt]{article}
+\documentclass[12pt]{article}
 
-% des paquetages indispensables, qui ajoutent des fonctionnalites
+\usepackage{amsfonts, amsmath, amssymb, amstext, latexsym}
+\usepackage{graphicx, epsfig}
 \usepackage[latin1]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{amsmath,amssymb}
-\usepackage{fullpage}
-\usepackage{graphicx}
-\usepackage{url}
-\usepackage{xspace}
-\usepackage[francais]{babel}
+\usepackage[french]{babel}
+\usepackage{exscale}
+\usepackage{amsbsy}
+\usepackage{amsopn}
+\usepackage{fancyhdr}
 
-\newtheorem{partie}{Partie}
+\newcommand{\noi}{\noindent}
+\newcommand{\dsp}{\displaystyle}
+\newcommand{\ind}{{{\large 1} \hspace*{-1.6mm} {\large 1}}}
 
-% des commandes utiles pour ecrire des maths : rajoutez les votres!
-\newcommand{\dx}{\,dx}
-\newcommand{\ito}{,\dotsc,}
-\newcommand{\R}{\mathbb{R}}
-\newcommand{\N}{\mathbb{N}}
-\newcommand{\Poly}[1]{\mathcal{P}_{#1}}
-\newcommand{\abs}[1]{\left\lvert#1\right\rvert}
-\newcommand{\norm}[1]{\left\lVert#1\right\rVert}
-\newcommand{\pars}[1]{\left(#1\right)}
-\newcommand{\bigpars}[1]{\bigl(#1\bigr)}
-\newcommand{\set}[1]{\left\{#1\right\}}
+
+\textheight 25cm
+\textwidth 16cm
+\oddsidemargin 0cm
+\evensidemargin 0cm
+\topmargin 0cm
+\hoffset -0mm
+\voffset -20mm
+
+
+\pagestyle{plain}
+
+
 
 % titre, auteur et date
 \title{TP Principes et M\'{e}thodes Statistiques}
@@ -44,14 +46,103 @@
 \section{V\'{e}rifications exp\'{e}rimentales \`{a} base de simulations}
 
 
-\begin{partie}
-Il est possible de simuler n \'{e}chantillons de la loi Pa(a,b) car nous connaissons sa fonction de r\'{e}partiton. 
+\begin{enumerate}
+\item Il est possible de simuler n \'{e}chantillons de la loi Pa(a,b) car nous connaissons sa fonction de r\'{e}partiton. 
 \\
 $P_a(a,b)$ est une fonction continue, elle peut donc s'apparenter \`{a} une loi uniforme.  Dans un premier temps, simuler n \'{e}chantillons de cette loi va donc consister  \`{a} tirer, au hasard, n valeurs al\'{e}atoires sur l'intervalle [0,1]. Connaissant la fonction de r\'{e}partition de la loi  $P_a(a,b)$,nous allons ensuite calculer l'image inverse $ F^{-1}(Ui)$ pour obtenir un \'{e}chantillon de loi $P_a(a,b)$ et nous ferons selons cela pour les n valeurs obtenues sur [0,1]
 \\
 Nous pouvons repr\'{e}senter cette m\'{e}thode sous forme d'un graphique : en mettant en ordonn\'{e}e les n valeurs de la loi Ui et en abscisse la projection pour chacune de ses valeurs de son image inverse ($F^{-1}(Ui)$ ).
-\end{partie}
+\\
+
+\item
+ En suivant la m\'{e}thode d\'{e}crite pr\'{e}cedemment, nous  avons simuler m \'{e}chantillon de taille n avec diff\'{e}rentes valeurs pour m,n et a. 
+
+\begin{figure*}[ht]
+\label{graph1}
+\centering
+\includegraphics[width=1.0\textwidth]{figures/Graph_P2Q2.pdf}
+\caption{Graphe des proportions d'IC($\alpha$) contenant la valeur exacte de a pour diff\'{e}rentes valeurs de $\alpha$}
+\end{figure*}
+
+Nous avons ensuite, pour chaque \'{e}chantillon de taille n, calculer l'intervalle de confiance bilat\'{e}ral. Pour cela nous avons utiliser L'intervalle de confiance trouv\'{e} en premi\`{e}re partie qui s'utilise avec $Y=\ln {\dsp \frac{X}{2}}$.  A chaque fois que a est bien contenu dans cet intervalle, nous inc\'{e}mentons une variable compteur. La proportion Pr d'IC contenant a est donc $Pr = Compteur/m$.
+\\
+Afin que cela soit plus repr\'{e}sentatif,nous avons trac\'{e} un graphique avec les diff\'{e}rentes proportions obtenues en fonction des $\alpha$. (Voir figure page \ref{graph1})
+\\
+
+Nous pouvons voir qu'il existe une lin\'{e}arit\'{e} entre la proportion et les $\alpha$. Plus on augmente le nombre d'\'{e}chantillon m et leur taille n et plus l'approximation est exacte. Ces points ont \'{e}t\'{e} obtenus pour les valeurs de $m = 100$, $n = 10, 30, 50, 100, 200, 500$, $a = 3, 5, 10, 20, 50$ et $\alpha = 0.01, 0.05, 0.10, 0.20 ..., 0.80, 0.90, 0.95, 0.99$.
+\\
+Quand on simule un grand nombre m d\'{e}chantillons de taille $n$ de la  loi $P_a(a,2)$ alors la proportion d'IC($\alpha$) contenant $a$ est aproximativement \'{e}gale \`{a}  $1 - \alpha$.
+\\
+
+\item Afin d'\'{e}stimer le param\`{e}tre $a$, nous disposons de trois m\'{e}thodes : la m\'{e}thodes des moments, la m\'{e}thode du maximum de vraisemblance qui nous m\`{e}nent au m\^{e}me r\'{e}sultat pour l'\'{e}stimation du param\`{e}tre $a$ et nous pouvons aussi d\'{e}terminer l'\'{e}stimateur sans bais de variance minimale si celui-ci existe.
+\\
+Pour chaque \'{e}chantillons (m en tout) nous mis au point sur R une fonction qui calcule les estimateurs propos\'{e}s , qui estime le biais et l'erreur quadratique de chaque estimateur, et qui fait une moyenne pour chacun de ces r\'{e}sultats. Par ces r\'{e}sultats, nous pouvons tracer un histogramme des estimateurs obtenus avec en rouge : la moyenne de ces estimateurs et en bleu : la valeur exacte de a pour laquelle il faut \^{e}tre la plus proche.
+\\
+
+Pour chaque graphique voici les moyennes des biais et des EQM obtenus pour chaque estimateur:
+\begin{itemize}
+\item Moyenne des biais EMV 1.691318 
+Moyenne des biais ESBVM -0.6469459 
+Moyenne des EQM EMV 38.3953 
+Moyenne des EQM ESBVM 23.16078 
+\item Moyenne des biais EMV 0.7355605 
+Moyenne des biais ESBVM 0.1987825 
+Moyenne des EQM EMV 6.691049 
+Moyenne des EQM ESBVM 5.589889 
+\item Moyenne des biais EMV 0.08228447 
+Moyenne des biais ESBVM -0.1193612 
+Moyenne des EQM EMV 1.867297 
+Moyenne des EQM ESBVM 1.801097 
+\item Moyenne des biais EMV 0.1657237 
+Moyenne des biais ESBVM 0.06406643 
+Moyenne des EQM EMV 0.8215394 
+Moyenne des EQM ESBVM 0.7823774 
+\item Moyenne des biais EMV 0.02238977 
+Moyenne des biais ESBVM 0.002344989 
+Moyenne des EQM EMV 0.207069 
+Moyenne des EQM ESBVM 0.2057478 
+\\
+\end{itemize}
+
+
+Apr\`{e}s analyse des r\'{e}sultats et des graphiques, nous pouvons en d\'{e}duire que le meilleur estimateur est l'$ESBVM$ car il poss\`{e}de  le biais et l'erreur quadratique moyenne le plus faible sur l'ensemble des \'{e}chantillons. Il faut noter que plus la taille des \'{e}chantillons est \'{e}lev\'{e}e, plus les estimateurs sont pr\'{e}cis. Nous pouvons tout de m\^{e}me constater que quelque soit le taille de l'\'{e}chantillon, l'$ESBVM$ est le meilleur estimateur.
 % fin du document
+\begin{figure*}[ht]
+\label{graph1}
+\centering
+\includegraphics[width=1.0\textwidth]{figures/GraphP2Q31.pdf}
+\caption{Histogramme des EMV et ESBVM pour $m=100 n=5 a=10$}
+\end{figure*}
+
+\begin{figure*}[ht]
+\label{graph1}
+\centering
+\includegraphics[width=1.0\textwidth]{figures/GraphP2Q32.pdf}
+\caption{Histogramme des EMV et ESBVM pour $m=100 n=20 a=10$}
+\end{figure*}
+
+\begin{figure*}[ht]
+\label{graph1}
+\centering
+\includegraphics[width=1.0\textwidth]{figures/GraphP2Q33.pdf}
+\caption{Histogramme des EMV et ESBVM pour $m=100 n=50 a=10$}
+\end{figure*}
+
+\begin{figure*}[ht]
+\label{graph1}
+\centering
+\includegraphics[width=1.0\textwidth]{figures/GraphP2Q34.pdf}
+\caption{Histogramme des EMV et ESBVM pour $m=100 n=100 a=10$}
+\end{figure*}
+
+\begin{figure*}[ht]
+\label{graph1}
+\centering
+\includegraphics[width=1.0\textwidth]{figures/GraphP2Q35.pdf}
+\caption{Histogramme des EMV et ESBVM pour $m=500 n=5 a=10$}
+\end{figure*}
+\end{enumerate}
+
 %=============
 \end{document}
 %=============
