@@ -53,37 +53,37 @@ TODO
 
 D'après les allures des histogrammes des mesures de la cuve 1 (figures 1 et 2) et celles des mesures de la cuve 2 (figures 3 et 4), ces deux échantillions sont vraisemblablement de loi exponentielle. Les figures 5 et 6 montrent que les mesures de la cuve 3 sont vraisemblalement de loi normale.
 
-\begin{figure*}[t]
+\begin{figure}
 \centering
 \includegraphics[width=1.0\textwidth]{figures/histopas_cuve1.pdf}
 \caption{Histogramme à pas constant de cuve1 obtenu dans R}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[t]
+\begin{figure}[h]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/histoeff_cuve1.pdf}
 \caption{Histogramme à classe de même effectif de cuve1 obtenu dans R}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[t]
+\begin{figure}[h]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/histopas_cuve2.pdf}
 \caption{Histogramme à pas constant de cuve2 obtenu dans R}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[t]
+\begin{figure}[h]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/histoeff_cuve2.pdf}
 \caption{Histogramme à classe de même effectif de cuve2 obtenu dans R}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[t]
+\begin{figure*}[h]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/histopas_cuve3.pdf}
 \caption{Histogramme à pas constant de cuve3 obtenu dans R}
 \end{figure*}
 
-\begin{figure*}[t]
+\begin{figure*}[h]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/histoeff_cuve3.pdf}
 \caption{Histogramme à classe de même effectif de cuve3 obtenu dans R}
@@ -130,6 +130,25 @@ $$Var(X)$$ &  $$=$$ & $$ \bm{ \mathbb{E}}[X^2] - \bm{ \mathbb{E}}[X]^2  $$ \\
 $
 
 Pour que  $\bm{ \mathbb{E}}[X]$ et Var(X) soit finis il faut que a $\geq$ 2.
+
+
+
+\item Caculons $F_Y$ la fonction de répartition de $Y=\ln {\dsp \frac{X}{2}}$.
+
+$ \begin{array}{lcl}
+$$F_Y(x)$$ &  $$=$$ & $$  \bm{ \mathbb{P}}( Y < x )  $$ \\
+ &  $$=$$ & $$\bm{ \mathbb{P}}(\ln {\dsp \frac{X}{2}} < x )  $$ \\
+ &  $$=$$ & $$\bm{ \mathbb{P}}(\ln X - \ln 2  < x ) $$ \\
+ &  $$=$$ & $$\bm{ \mathbb{P}}(X  < \exp ( x + \ln 2) ) $$ \\
+ &  $$=$$ & $$\bm{ \mathbb{P}}(X  < 2\exp(x) ) $$ \\
+ &  $$=$$ & $$ F_X(2\exp(x))$$ \\
+ &  $$=$$ & $$ 1 - 2^a (2\exp(x))^{-a} $$ \\
+$$F_Y(x)$$  &  $$=$$ & $$ 1 - \exp(-ax) $$ \\
+\\
+\end{array}$
+
+Donc Y suit la loi $\cal{E}$(a).
+
 
 
 
