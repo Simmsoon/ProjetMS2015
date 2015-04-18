@@ -1,12 +1,12 @@
 % definit le type de document et ses options
-\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,12pt]{article}
 
 % des paquetages indispensables, qui ajoutent des fonctionnalites
 \usepackage[latin1]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{amsmath,amssymb}
+\usepackage{amsfonts, amsmath, amssymb, amstext, latexsym,bm}
 \usepackage{fullpage}
-\usepackage{graphicx}
+\usepackage{graphicx, epsifig}
 \usepackage{url}
 \usepackage{xspace}
 \usepackage[francais]{babel}
@@ -24,6 +24,7 @@
 \newcommand{\pars}[1]{\left(#1\right)}
 \newcommand{\bigpars}[1]{\bigl(#1\bigr)}
 \newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\ind}{{{\large 1} \hspace*{-1.6mm} {\large 1}}}
 
 % titre, auteur et date
 \title{TP Principes et M\'{e}thodes Statistiques}
@@ -44,55 +45,100 @@
 
 TODO
 
-\section{Analyse des dÃ©fauts de cuves}
+\section{Analyse des défauts de cuves}
 
 \begin{enumerate}
 
-\item Les mesures des trois cuves prÃ©sentent des valeurs minimums assez proches les unes des autres: 2.007, 2.006 et 2.059. La cuve 2 possÃ¨de la valeur maximale 5.437 et la variance la plus grande 0.54127686. Tandis que la cuve 1 s'empare du maximum des Ã©cat-types 1.023202 et du maximum du coefficient de variation empirique 0.3563262. Les mesures de la cuve 3 prÃ©sentent le plus de rÃ©gularitÃ© avec le minimum de variation 0.15907528, le minimum d'Ã©cart-type 0.4163554 et de coefficient de variation empirique 0.1475989 .
+\item Les mesures des trois cuves présentent des valeurs minimums assez proches les unes des autres: 2.007, 2.006 et 2.059. La cuve 2 possède la valeur maximale 5.437 et la variance la plus grande 0.54127686. Tandis que la cuve 1 s'empare du maximum des écat-types 1.023202 et du maximum du coefficient de variation empirique 0.3563262. Les mesures de la cuve 3 présentent le plus de régularité avec le minimum de variation 0.15907528, le minimum d'écart-type 0.4163554 et de coefficient de variation empirique 0.1475989 .
 
-D'aprÃ¨s les allures des histogrammes des mesures de la cuve 1 (figures 1 et 2) et celles des mesures de la cuve 2 (figures 3 et 4), ces deux Ã©chantillions sont vraisemblablement de loi exponentielle. Les figures 5 et 6 montrent que les mesures de la cuve 3 sont vraisemblalement de loi normale.
+D'après les allures des histogrammes des mesures de la cuve 1 (figures 1 et 2) et celles des mesures de la cuve 2 (figures 3 et 4), ces deux échantillions sont vraisemblablement de loi exponentielle. Les figures 5 et 6 montrent que les mesures de la cuve 3 sont vraisemblalement de loi normale.
 
 \begin{figure*}[t]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/histopas_cuve1.pdf}
-\caption{Histogramme Ã  pas constant de cuve1 obtenu dans R}
+\caption{Histogramme à pas constant de cuve1 obtenu dans R}
 \end{figure*}
 
 \begin{figure*}[t]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/histoeff_cuve1.pdf}
-\caption{Histogramme Ã  classe de mÃªme effectif de cuve1 obtenu dans R}
+\caption{Histogramme à classe de même effectif de cuve1 obtenu dans R}
 \end{figure*}
 
 \begin{figure*}[t]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/histopas_cuve2.pdf}
-\caption{Histogramme Ã  pas constant de cuve2 obtenu dans R}
+\caption{Histogramme à pas constant de cuve2 obtenu dans R}
 \end{figure*}
 
 \begin{figure*}[t]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/histoeff_cuve2.pdf}
-\caption{Histogramme Ã  classe de mÃªme effectif de cuve2 obtenu dans R}
+\caption{Histogramme à classe de même effectif de cuve2 obtenu dans R}
 \end{figure*}
 
 \begin{figure*}[t]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/histopas_cuve3.pdf}
-\caption{Histogramme Ã  pas constant de cuve3 obtenu dans R}
+\caption{Histogramme à pas constant de cuve3 obtenu dans R}
 \end{figure*}
 
 \begin{figure*}[t]
 \centering
 \includegraphics[width=1.0\textwidth]{figures/histoeff_cuve3.pdf}
-\caption{Histogramme Ã  classe de mÃªme effectif de cuve3 obtenu dans R}
+\caption{Histogramme à classe de même effectif de cuve3 obtenu dans R}
 \end{figure*}
 
 
+
+
+
+\vspace{3mm}
+
+
+\item Caculons $F_x$ la fonction de répartition de $X$.
+
+$X$ est une variable aléatoire de loi ${\cal P}a(a, 2)$,  sa densité est :
+$ f(x) = \frac{a \, 2^a}{x^{1+a}} \, \ind_{[2,+\infty[}(x)$, donc
+
+
+$ \begin{array}{lcl}
+$$F_x(x)$$ &  $$=$$ & $$\int_{-\infty}^{x} \frac{a \, 2^a}{t^{1+a}} \, \ind_{[2,+\infty[}(t) \, \mathrm dt $$ \\
+ &  $$=$$ & $ \left\{ \begin{array}{l l}  $$\int_{2}^{x} a  2^a \, t^{-(1+a)} \, \mathrm dt $$ & si $$ x > 2 $$ \\ 0 & sinon. \\\end{array} \right. $ & \\
+ $$F_x(x)$$ &  $$=$$ & $\left\{ \begin{array}{l l}   $$1 - 2^a \, x^{-a} $$ & si $$ x > 2 $$ \\ 0 & sinon. \\\end{array} \right. $ & \\
+\\
+\end{array}$
+
+\vspace{3mm}
+
+Le théorème de transfert donne:
+
+$
+\begin{array}{lcl}
+$$\bm{ \mathbb{E}}[X]$$ &  $$=$$ & $$\int_{-\infty}^{+\infty} t\, \frac{a \, 2^a}{t^{1+a}} \, \ind_{[2,+\infty[}(t) \, \mathrm dt $$ \\
+ & $$=$$ & $$ \frac{a2^a}{1-a}  \, [x^{1-a} ]_2^{+\infty} $$  \\
+\\
+\end{array}
+$
+
+$
+\begin{array}{lcl}
+$$Var(X)$$ &  $$=$$ & $$ \bm{ \mathbb{E}}[X^2] - \bm{ \mathbb{E}}[X]^2  $$ \\
+ & $$=$$ & $$ {\frac{a2^a}{2-a}  \, [x^{2-a} ]_2^{+\infty} }  -  ({\frac{a2^a}{1-a}  \, [x^{1-a} ]_2^{+\infty} })^2 $$  \\
+\\
+\end{array}
+$
+
+Pour que  $\bm{ \mathbb{E}}[X]$ et Var(X) soit finis il faut que a $\geq$ 2.
+
+
+
+
+
+
+
+
 \end{enumerate}
-
-
-
 
 
 
