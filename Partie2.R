@@ -36,13 +36,14 @@ prop <- Compteur / m
 return (prop);
 }
 
-par(mfcol=c(1,2))
+par(mfcol=c(1,1))
 alpha <- c(0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 0.95, 0.99)
 proportion <- c(Calculer_Proportion(100,3,2,10, alpha[1]), Calculer_Proportion(100,5,b,10, alpha[2]),Calculer_Proportion(100,10,b,10, alpha[3]), Calculer_Proportion(100,3,b,30, alpha[4]), Calculer_Proportion(100,5,b,50, alpha[5]), Calculer_Proportion(100,3,2,100, alpha[6]), Calculer_Proportion(100,5,b,500, alpha[7]),Calculer_Proportion(100,10,b,10, alpha[8]),Calculer_Proportion(100,3,b,30, alpha[9]),Calculer_Proportion(100,5,b,50, alpha[10]),Calculer_Proportion(100,5,b,400, alpha[11]),Calculer_Proportion(100,5,b,300, alpha[12]),Calculer_Proportion(100,5,b,200, alpha[13]))
 
 # Affichage sous forme graphique pour expliciter
 plot(alpha,proportion, col="red", main="Proportion d'IC contenant la valeur de a pour différents alpha")
 print(proportion)
+
 
 #Question 3
 # Méthode des Moments et Méthode de maximum de vraisemblance pour estimer le paramètre a
@@ -110,35 +111,39 @@ for (i in 1:m)
 	#Esperance
 	E <- (2*a)/(a-1) - (a*(2^a))/((a-1)*(mean(cuves)^(a-1)))
 	Diff <- abs( Moy - E)
+	print(Diff)
 	if (Diff > Epsillon )
 	{
 		Compteur <- Compteur + 1
 	}
-	print(Compteur)
-	print(Compteur/(m))
+
 }
+return (Compteur);
 }
-Variation_E(100,5,10,1)
-#Variation_E(100,20,10,1)
-#Variation_E(100,50,10,1)
-#Variation_E(100,100,10,1)
-#Variation_E(100,500,10,1)
+j <- 500
+Cpt <- rep(0,j)
+nb <- rep(0,j)
+for ( i in 1:j)
+{
+	nb[i] <- i
+	Cpt[i] <- Variation_E(100,i,10,1)
+}
+par(mfcol=c(1,1))
+plot(nb, Cpt, col="purple", xlab="valeur de n", ylab="Ecart entre Moyenne et Esperance", main=" Variation de l'écart entre Moyenne et Esperance en fonction de n (Epsilon=1)")
 
 #Question 5
 #Vérification du théorème central limite
 Loi_Normale <- function (m,n,a, Epsillon){
+Moy <- rep(0,m)
 for (i in 1:m)
 {
 	Echan <- EchantillonPa(a,b,n)
 	Moy[i] <- mean(Echan)	
 	
-
-	
-
 }
 		par(mfcol=c(1,2))
 	#Histogramme pour la loi normale sur Echan
-	hist(Moy, prob=T, col="green", xlab="Moyenne des échantillons", main="Histogramme des moyennes empiriques des m échantillons")
+	hist(Moy, prob=T, col="gray", xlab="Moyenne des échantillons", main="Histogramme des moyennes empiriques des m échantillons")
 	#Graphe de probabilités pour la loi normale
 	qqnorm(Moy, col="blue", main="Graphe de probabilité pour la loi normale sur les m moyennes empiriques")
 }
@@ -148,3 +153,30 @@ for (i in 1:m)
 #Loi_Normale(100,100,10,1)
 #Loi_Normale(100,500,10,1)
 
+# Question 6
+# Etude de la convergence en loi des estimateurs
+Convergence_Loi <- function (m,n,a){
+EMV<-rep(0,m)
+ESBVM<-rep(0,m)
+for (i in 1:m)
+{
+	Echan <- EchantillonPa(a,b,n)
+	x <- log(Echan/2)
+	EMV[i]<- 1/mean(x)
+	print("EMV")
+	print(EMV[i])
+	ESBVM[i]<- (n-1)*EMV[i]/n
+}
+	par(mfcol=c(2,2))
+	#Histogramme pour la  convergence en loi des estimateurs
+	hist(EMV, prob=T, col="blue", xlab="Moyenne des échantillons", main="Histogramme des EMV")
+	hist(EMV, prob=T, col="RED", xlab="Moyenne des échantillons", main="Histogramme des ESBVM")
+	#Graphe de probabilités pour la convergence en loi des estimateurs
+	qqnorm(EMV, col="blue", main="Graphe de probabilité pour la loi normale sur les m EMV")
+	qqnorm(ESBVM, col="red", main="Graphe de probabilité pour la loi normale sur les m ESBVM")
+}
+#Convergence_Loi(100,5,10)
+#Convergence_Loi(100,20,10)
+#Convergence_Loi(100,50,10)
+#Convergence_Loi(100,100,10)
+#Convergence_Loi(100,500,10)
