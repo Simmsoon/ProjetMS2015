@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.8)  19 APR 2015 12:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.8)  19 APR 2015 15:35
 entering extended mode
 **C:/Users/Simon/Documents/GitHub/ProjetMS2015/Rapport.tex
 (C:/Users/Simon/Documents/GitHub/ProjetMS2015/Rapport.tex
@@ -337,27 +337,67 @@ File: figures/GraphP2Q35.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/GraphP2Q35.pdf used on input line 138.
 (pdftex.def)             Requested size: 455.24408pt x 216.95343pt.
 
-<figures/GraphP2Q4.pdf, id=24, 758.835pt x 325.215pt>
+<figures/GraphP2Q4.pdf, id=24, 1027.84pt x 489.83pt>
 File: figures/GraphP2Q4.pdf Graphic file (type pdf)
 
 <use figures/GraphP2Q4.pdf>
 Package pdftex.def Info: figures/GraphP2Q4.pdf used on input line 145.
-(pdftex.def)             Requested size: 455.24408pt x 195.10568pt.
- [2] [3 <C:/Users/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q31.pdf>] 
-[4 <C:/Users/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q32.pdf> <C:/Us
-ers/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q33.pdf>] [5 <C:/Users/S
-imon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q34.pdf> <C:/Users/Simon/Docu
-ments/GitHub/ProjetMS2015/figures/GraphP2Q35.pdf>]
-[6 <C:/Users/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q4.pdf>]
+(pdftex.def)             Requested size: 455.24408pt x 216.95343pt.
+ [2]
+<figures/GraphP2Q51.pdf, id=29, 1024.82875pt x 489.83pt>
+File: figures/GraphP2Q51.pdf Graphic file (type pdf)
+
+<use figures/GraphP2Q51.pdf>
+Package pdftex.def Info: figures/GraphP2Q51.pdf used on input line 165.
+(pdftex.def)             Requested size: 455.24408pt x 217.58873pt.
+
+<figures/GraphP2Q52.pdf, id=30, 1024.82875pt x 489.83pt>
+File: figures/GraphP2Q52.pdf Graphic file (type pdf)
+
+<use figures/GraphP2Q52.pdf>
+Package pdftex.def Info: figures/GraphP2Q52.pdf used on input line 171.
+(pdftex.def)             Requested size: 455.24408pt x 217.58873pt.
+
+<figures/GraphP2Q53.pdf, id=31, 1024.82875pt x 489.83pt>
+File: figures/GraphP2Q53.pdf Graphic file (type pdf)
+
+<use figures/GraphP2Q53.pdf>
+Package pdftex.def Info: figures/GraphP2Q53.pdf used on input line 177.
+(pdftex.def)             Requested size: 455.24408pt x 217.58873pt.
+
+<figures/GraphP2Q54.pdf, id=32, 1024.82875pt x 489.83pt>
+File: figures/GraphP2Q54.pdf Graphic file (type pdf)
+
+<use figures/GraphP2Q54.pdf>
+Package pdftex.def Info: figures/GraphP2Q54.pdf used on input line 183.
+(pdftex.def)             Requested size: 455.24408pt x 217.58873pt.
+
+<figures/GraphP2Q55.pdf, id=33, 1024.82875pt x 489.83pt>
+File: figures/GraphP2Q55.pdf Graphic file (type pdf)
+
+<use figures/GraphP2Q55.pdf>
+Package pdftex.def Info: figures/GraphP2Q55.pdf used on input line 189.
+(pdftex.def)             Requested size: 455.24408pt x 217.58873pt.
+ [3 <C:/Users/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q31.pdf>] [4 <
+C:/Users/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q32.pdf> <C:/Users/
+Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q33.pdf>] [5 <C:/Users/Simon
+/Documents/GitHub/ProjetMS2015/figures/GraphP2Q34.pdf> <C:/Users/Simon/Document
+s/GitHub/ProjetMS2015/figures/GraphP2Q35.pdf>]
+[6 <C:/Users/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q4.pdf> <C:/Use
+rs/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q51.pdf>] [7 <C:/Users/Si
+mon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q52.pdf> <C:/Users/Simon/Docum
+ents/GitHub/ProjetMS2015/figures/GraphP2Q53.pdf>] [8 <C:/Users/Simon/Documents/
+GitHub/ProjetMS2015/figures/GraphP2Q54.pdf> <C:/Users/Simon/Documents/GitHub/Pr
+ojetMS2015/figures/GraphP2Q55.pdf>]
 (C:\Users\Simon\Documents\GitHub\ProjetMS2015\Rapport.aux) ) 
 Here is how much of TeX's memory you used:
- 2973 strings out of 493921
- 38434 string characters out of 3146079
+ 2998 strings out of 493921
+ 39039 string characters out of 3146079
  101280 words of memory out of 3000000
- 6222 multiletter control sequences out of 15000+200000
+ 6242 multiletter control sequences out of 15000+200000
  12499 words of font info for 52 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,6n,43p,734b,313s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 27i,6n,43p,734b,316s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Simon/Doc
 uments/Latex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Simon/Document
 s/Latex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Simon/Documents/La
@@ -371,9 +411,9 @@ cmsy10.pfb><C:/Users/Simon/Documents/Latex/fonts/type1/public/amsfonts/cm/cmsy8
 .pfb><C:/Users/Simon/Documents/Latex/fonts/type1/public/amsfonts/symbols/msam10
 .pfb><C:/Users/Simon/Documents/Latex/fonts/type1/public/amsfonts/symbols/msbm10
 .pfb>
-Output written on Rapport.pdf (6 pages, 143612 bytes).
+Output written on Rapport.pdf (8 pages, 162336 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
+ 144 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 36 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 
