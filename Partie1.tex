@@ -177,9 +177,31 @@ $$ \bm{ \mathbb{P}}(\a \in [\frac{z_{2n,1-\frac{\alpha}{2}} }{ 2a\sum_{i=0}^{n}Y
 
 Donc:
 
-$ [\frac{z_{2n,1-\frac{\alpha}{2}} }{ 2a\sum_{i=0}^{n}Y_i}, \frac{ z_{2n,\frac{\alpha}{2}}}{ 2a\sum_{i=0}^{n}Y_i}] $ est un intervalle de confiance de seuil $\alpha$ pour a
+$ [\frac{z_{2n,1-\frac{\alpha}{2}} }{ 2a\sum_{i=0}^{n}Y_i}, \frac{ z_{2n,\frac{\alpha}{2}}}{ 2a\sum_{i=0}^{n}Y_i}] $ est un intervalle de confiance de seuil $\alpha$ pour a.
 
+\vspace{3mm}
 
+\item On a  $F_Y(x) = 1 - \exp(-ax)$, d'où $\ln(1-F_Y(x)) = -ax $. Par conséquent, le graphe de probabilités est le nuage de points $(Y_i,\ln(1-\frac{i}{n})), i \in {1,...,n-1}$.
+
+Le tracé des graphes de probabilités sous {\tt R } (figure 7) des échantillions de la cuve 1 et la cuve 2 permettent de considérer que les points sont approximativement allignés sur une droite de pente négative et passants par l'origine, donc on peut considérer qu'il est vraisemblable que les mesures des faissures des cuves 1 et 2 suivent une loi exponentielle. Le graphe de probabilité des échantillions de la cuve 3 semble plus proche d'un logarithme que d'une droite. On en conclue que la loi exponentielle n'est pas un modèle approprié pour ces données.
+
+\begin{figure*}[h]
+\centering
+\includegraphics[width=1.0\textwidth]{figures/GraphP1Q5.pdf}
+\caption{Graphes de probabilités}
+\end{figure*}
+
+On sait que l'estimateur de maximum de vraisemblance et l'estimateur des moments de $\lambda$ pour un échantillion $Y_1, Y_2, ... , Y_n$   qui suit une loi exponentielle de paramètre $\lambda$ sont égaux à $\hat{\lambda_n} = \frac{1}{\bar{Y_n}}$. Ce qui donne les valeurs suivantes de $\hat{\a_n}$ pour chacune des trois cuves:
+
+$\hat{a_{cuve1}}$ = 1.982944
+
+$\hat{a_{cuve2}}$ = 2.164488
+
+$\hat{a_{cuve3}}$ = 1.948179
+
+\vspace{3mm}
+
+\item TODO
 
 
 
