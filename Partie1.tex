@@ -103,8 +103,8 @@ $ f(x) = \frac{a \, 2^a}{x^{1+a}} \, \ind_{[2,+\infty[}(x)$, donc
 
 
 $ \begin{array}{lcl}
-$$F_x(x)$$ &  $$=$$ & $$\int_{-\infty}^{x} \frac{a \, 2^a}{t^{1+a}} \, \ind_{[2,+\infty[}(t) \, \mathrm dt $$ \\
- &  $$=$$ & $ \left\{ \begin{array}{l l}  $$\int_{2}^{x} a  2^a \, t^{-(1+a)} \, \mathrm dt $$ & si $$ x > 2 $$ \\ 0 & sinon. \\\end{array} \right. $ & \\
+$$F_x(x)$$ &  $$=$$ & $$ \int_{-\infty}^{x} \frac{a \, 2^a}{t^{1+a}} \, \ind_{[2,+\infty[}(t) \, \mathrm dt $$ \\
+ &  $$=$$ & $ \left\{ \begin{array}{l l}  $$\int_{2}^{x} a  2^a \, t^{-(1+a)} \, \mathrm dt $$ & si $$\, x > 2 $$ \\ 0 & sinon. \\\end{array} \right. $ & \\
  $$F_x(x)$$ &  $$=$$ & $\left\{ \begin{array}{l l}   $$1 - 2^a \, x^{-a} $$ & si $$ x > 2 $$ \\ 0 & sinon. \\\end{array} \right. $ & \\
 \\
 \end{array}$
@@ -142,16 +142,42 @@ $$F_Y(x)$$ &  $$=$$ & $$  \bm{ \mathbb{P}}( Y < x )  $$ \\
  &  $$=$$ & $$\bm{ \mathbb{P}}(X  < \exp ( x + \ln 2) ) $$ \\
  &  $$=$$ & $$\bm{ \mathbb{P}}(X  < 2\exp(x) ) $$ \\
  &  $$=$$ & $$ F_X(2\exp(x))$$ \\
- &  $$=$$ & $$ 1 - 2^a (2\exp(x))^{-a} $$ \\
-$$F_Y(x)$$  &  $$=$$ & $$ 1 - \exp(-ax) $$ \\
+ &  $$=$$ & $  \left\{ \begin{array}{l l}  $$ 1 - 2^a (2\exp(x))^{-a} $$ & si $$\, x > 2 $$ \\ 0 & sinon. \\\end{array} \right. $ \\
+$$F_Y(x)$$  &  $$=$$ &  $  \left\{ \begin{array}{l l}  $$ 1 - \exp(-ax) $$  & si $$\, x > 2 $$ \\ 0 & sinon. \\\end{array} \right. $ \\
 \\
-\end{array}$
+\end{array} $
 
 Donc Y suit la loi $\cal{E}$(a).
 
+\vspace{3mm}
+
+\item Trouvons une fonction pivotale pour déterminer l'expression d'un intervalle de confiance de seuil $\alpha$ pour a.
+On a besoin des trois lemmes suivant:
 
 
+Lemme 1: Si $\lambda$>0, $\mu$ >0 et  $X$ une variable aléatoire réelle de loi $\cal{E}$($\lambda$) alors $\mu X \sim  \cal{E}(\frac{\lambda}{\mu}) $
 
+Lemme 2: Si $X_1, X_2, ... , X_n$ une famille de variables aléatoires réelles indépendantes et identiquement distriuées de loi  $\cal{E}$($\lambda$) alors $\sum_{i=0}^{n}X_i \sim \Gamma ($n,$\lambda)$.
+
+Lemme 3: $\Gamma ($n, $\frac{1}{2}$) et $\chi_{2n}^{2}$ décrivent la même loi de probabilité.
+
+ Soit $Y_1, Y_2, ... , Y_n$ une famille de variables aléatoires réelles indépendantes et identiquement distriuées de loi  $\cal{E}$(a). 
+$2aY_1, 2aY_2, ... , 2aY_n$ sont donc de loi $ \cal{E}$($\frac{1}{2}$) (Lemme 1).
+D'où, 2a$\sum_{i=0}^{n}Y_i \sim \Gamma ($n,$\frac{1}{2})$ (Lemme 2).
+Donc, 2a$\sum_{i=0}^{n}Y_i \sim \chi_{2n}^{2}$.
+Or $\chi_{2n}^{2}$ ne dépend pas du paramètre a, donc 2a$\sum_{i=0}^{n}Y_i$ est une fonction pivotale.
+
+En notant $z_{n,\alpha}$ 1-($\alpha$)-quantile de la loi $\chi_{2n}^{2}$ on a:
+
+$$ \bm{ \mathbb{P}}( z_{2n,1-\frac{\alpha}{2}} \leq   2a\sum_{i=0}^{n}Y_i \leq  z_{2n,\frac{\alpha}{2}} ) = 1 - \frac{\alpha}{2} - \frac{\alpha}{2} = 1-\alpha $$
+
+D'où:
+
+$$ \bm{ \mathbb{P}}(\a \in [\frac{z_{2n,1-\frac{\alpha}{2}} }{ 2a\sum_{i=0}^{n}Y_i}, \frac{ z_{2n,\frac{\alpha}{2}}}{ 2a\sum_{i=0}^{n}Y_i}]) = 1-\alpha $$
+
+Donc:
+
+$ [\frac{z_{2n,1-\frac{\alpha}{2}} }{ 2a\sum_{i=0}^{n}Y_i}, \frac{ z_{2n,\frac{\alpha}{2}}}{ 2a\sum_{i=0}^{n}Y_i}] $ est un intervalle de confiance de seuil $\alpha$ pour a
 
 
 
@@ -165,3 +191,4 @@ Donc Y suit la loi $\cal{E}$(a).
 %=============
 \end{document}
 %=============
+
