@@ -193,18 +193,40 @@ Le tracé des graphes de probabilités sous {\tt R } (figure 7) des échantillions 
 
 On sait que l'estimateur de maximum de vraisemblance et l'estimateur des moments de $\lambda$ pour un échantillion $Y_1, Y_2, ... , Y_n$   qui suit une loi exponentielle de paramètre $\lambda$ sont égaux à $\hat{\lambda_n} = \frac{1}{\bar{Y_n}}$. Ce qui donne les valeurs suivantes de $\hat{\a_n}$ pour chacune des trois cuves:
 
-$\hat{a_{cuve1}}$ = 1.982944
+$\hat{a_{cuve1}}$ = 3.170032
 
-$\hat{a_{cuve2}}$ = 2.164488
+$\hat{a_{cuve2}}$ = 4.331652
 
-$\hat{a_{cuve3}}$ = 1.948179
+$\hat{a_{cuve3}}$ = 2.998926
 
 \vspace{3mm}
 
+\item D'après la question 1, les données des cuves 1 et 2 sont vraisemblablement de loi exponentielle et celles de la cuve 3 est vraisemblablement de loi normale. Pour vérifier ces résultats on trace les graphes de probabilités en utilisant les commandes suivantes dans {\tt R}:
+{\tt
+> plot(sort(cuve1)[1 :length(cuve1)-1],log(1-seq(1 :(length(cuve1)-1))/(length(cuve1))))
+
+> plot(sort(lncuve2)[1 :length(cuve2)-1],log(1-seq(1 :(length(cuve2)-1))/(length(cuve2))))
+
+> plot(sort(cuve3)[1 :length(cuve3)-1],qnorm(seq(1 :(length(cuve3)-1))/(length(cuve3))))
+ }
+
+Et on obtient les figures 8 et 9, qui sont en adéquation avec les résultat de la première question.
+
+
+\item
+\begin{enumerate}
+\item
+ Les défauts sont classés dangereux lorsque leur taille est supérieure à 5 mm. Le constructeur assure que ses cuves après 5 années d'utilisation ne présenteront pas une proportion de défauts dangereux supérieure à 5\%. C'est équivaut à dire: $\bm{ \mathbb{P}}( X > 5  ) < 0.05$
+
+Or, d'après la question 2, $$\bm{ \mathbb{P}}( X \leq 5  )= 1 - 2^a \, 5^{-a}$$
+D'où, $$\bm{ \mathbb{P}}( X > 5  )= 1 -  \mathbb{P}}( X \leq 5  ) = 2^a \, 5^{-a}$$
+Donc, $$\bm{ \mathbb{P}}( X > 5  ) < 0.05 \Leftrightarrow  2^a \, 5^{-a} < 0.05 \Leftrightarrow a > \ln (0.05)/\ln(\frac{2}{5})= 3.269412 $$
+
+D'après les estimations de a trouvées à la question 5, on peut dire que les affirmations du constructeur ne sont valides que pour les données de la cuve 2.
+
+
 \item TODO
-
-
-
+\end{enumerate}
 \end{enumerate}
 
 
