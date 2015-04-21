@@ -123,13 +123,13 @@ return (Compteur);
 j <- 500
 Cpt <- rep(0,j)
 nb <- rep(0,j)
-for ( i in 1:j)
-{
-	nb[i] <- i
-	Cpt[i] <- Variation_E(100,i,10,1)
-}
-par(mfcol=c(1,1))
-plot(nb, Cpt, col="purple", xlab="valeur de n", ylab="Ecart entre Moyenne et Esperance", main=" Variation de l'écart entre Moyenne et Esperance en fonction de n (Epsilon=1)")
+#for ( i in 1:j)
+#{
+#	nb[i] <- i
+#	Cpt[i] <- Variation_E(100,i,10,1)
+#}
+#par(mfcol=c(1,1))
+#plot(nb, Cpt, col="purple", xlab="valeur de n", ylab="Nombre d'ecarts entre Moyenne et Esperance", main=" Variation de l'écart entre Moyenne et Esperance en fonction de n (Epsilon=1)")
 
 #Question 5
 #Vérification du théorème central limite
@@ -145,38 +145,34 @@ for (i in 1:m)
 	#Histogramme pour la loi normale sur Echan
 	hist(Moy, prob=T, col="gray", xlab="Moyenne des échantillons", main="Histogramme des moyennes empiriques des m échantillons")
 	#Graphe de probabilités pour la loi normale
-	qqnorm(Moy, col="blue", main="Graphe de probabilité pour la loi normale sur les m moyennes empiriques")
+	qqnorm(Moy, col="blue",ylab="Moyenne des échantillons", main="Graphe de probabilité pour la loi normale sur les m moyennes empiriques")
+	qqline(Moy, col="red")
 }
 #Loi_Normale(100,5,10,1)
 #Loi_Normale(100,20,10,1)
-#Loi_Normale(100,50,10,1)
 #Loi_Normale(100,100,10,1)
-#Loi_Normale(100,500,10,1)
+#Loi_Normale(100,1000,10,1)
+#Loi_Normale(100,10000,10,1)
 
 # Question 6
 # Etude de la convergence en loi des estimateurs
 Convergence_Loi <- function (m,n,a){
-EMV<-rep(0,m)
-ESBVM<-rep(0,m)
-for (i in 1:m)
-{
+
 	Echan <- EchantillonPa(a,b,n)
-	x <- log(Echan/2)
-	EMV[i]<- 1/mean(x)
-	print("EMV")
-	print(EMV[i])
-	ESBVM[i]<- (n-1)*EMV[i]/n
+	x <- length(Echan)
+	# On trace la fonction de repartition Empirique
+	plot(Echan, 1:x/x,main = "Fonction de répartition empirique ",xlab="X", ylab=" F(x) = 1-2^a/x^a", col="purple");
 }
-	par(mfcol=c(2,2))
-	#Histogramme pour la  convergence en loi des estimateurs
-	hist(EMV, prob=T, col="blue", xlab="Moyenne des échantillons", main="Histogramme des EMV")
-	hist(EMV, prob=T, col="RED", xlab="Moyenne des échantillons", main="Histogramme des ESBVM")
-	#Graphe de probabilités pour la convergence en loi des estimateurs
-	qqnorm(EMV, col="blue", main="Graphe de probabilité pour la loi normale sur les m EMV")
-	qqnorm(ESBVM, col="red", main="Graphe de probabilité pour la loi normale sur les m ESBVM")
-}
-#Convergence_Loi(100,5,10)
-#Convergence_Loi(100,20,10)
-#Convergence_Loi(100,50,10)
-#Convergence_Loi(100,100,10)
-#Convergence_Loi(100,500,10)
+# On trace la fonction de repartition normale
+x <- seq(2,50)
+#Pour la fonction de repartition on prend a <- 0.5
+a <- 0.5
+	par(mfcol=c(1,5))
+Convergence_Loi(100,5,5)
+Convergence_Loi(100,20,5)
+Convergence_Loi(100,100,5)
+Convergence_Loi(100,1000,5)
+Convergence_Loi(100,10000,5)
+	par(mfcol=c(1,1))
+plot( x, 1-2^a/x^a, main = "Fonction de répartition", ylab=" F(x) = 1-2^a/x^a", col="gray");
+lines( x, 1-2^a/x^a, col="blue");
