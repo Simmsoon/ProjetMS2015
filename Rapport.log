@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.8)  19 APR 2015 15:50
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2014.11.8)  21 APR 2015 13:10
 entering extended mode
 **C:/Users/Simon/Documents/GitHub/ProjetMS2015/Rapport.tex
 (C:/Users/Simon/Documents/GitHub/ProjetMS2015/Rapport.tex
@@ -201,7 +201,19 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 \f@ncyO@olf=\skip53
 \f@ncyO@orf=\skip54
 )
-(C:\Users\Simon\Documents\GitHub\ProjetMS2015\Rapport.aux)
+(C:\Users\Simon\Documents\Latex\tex\latex\float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count103
+\float@exts=\toks23
+\float@box=\box28
+\@float@everytoks=\toks24
+\@floatcapt=\box29
+)
+(C:\Users\Simon\Documents\GitHub\ProjetMS2015\Rapport.aux
+
+LaTeX Warning: Label `graphe2' multiply defined.
+
+)
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
@@ -214,20 +226,19 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
 LaTeX Font Info:    ... okay on input line 37.
-
-(C:\Users\Simon\Documents\Latex\tex\context\base\supp-pdf.mkii
+ (C:\Users\Simon\Documents\Latex\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count103
+\scratchcounter=\count104
 \scratchdimen=\dimen120
-\scratchbox=\box28
-\nofMPsegments=\count104
-\nofMParguments=\count105
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count106
+\scratchbox=\box30
+\nofMPsegments=\count105
+\nofMParguments=\count106
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count107
 \MPscratchDim=\dimen121
-\MPnumerator=\count107
-\makeMPintoPDFobject=\count108
-\everyMPtoPDFconversion=\toks24
+\MPnumerator=\count108
+\makeMPintoPDFobject=\count109
+\everyMPtoPDFconversion=\toks26
 )
 LaTeX Info: Redefining \degres on input line 37.
 LaTeX Info: Redefining \dots on input line 37.
@@ -257,7 +268,17 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 LaTeX Font Info:    External font `cmex7' loaded for size
 (Font)              <6> on input line 52.
 
-Underfull \hbox (badness 10000) in paragraph at lines 50--56
+Underfull \hbox (badness 10000) in paragraph at lines 50--54
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--67
 
  []
 
@@ -265,195 +286,181 @@ Underfull \hbox (badness 10000) in paragraph at lines 50--56
 File: figures/Graph_P2Q2.pdf Graphic file (type pdf)
 
 <use figures/Graph_P2Q2.pdf>
-Package pdftex.def Info: figures/Graph_P2Q2.pdf used on input line 64.
+Package pdftex.def Info: figures/Graph_P2Q2.pdf used on input line 71.
 (pdftex.def)             Requested size: 455.24408pt x 216.95343pt.
+ [1
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--73
-
- []
-
-[1
-
-{C:/Users/Simon/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <C:/Users/Si
-mon/Documents/GitHub/ProjetMS2015/figures/Graph_P2Q2.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 74--78
+{C:/Users/Simon/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 75--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--82
+Underfull \hbox (badness 10000) in paragraph at lines 78--82
 
  []
 
-<figures/GraphP2Q31.pdf, id=19, 1027.84pt x 489.83pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--87
+
+ []
+
+<figures/GraphP2Q31.pdf, id=14, 1027.84pt x 489.83pt>
 File: figures/GraphP2Q31.pdf Graphic file (type pdf)
 
 <use figures/GraphP2Q31.pdf>
-Package pdftex.def Info: figures/GraphP2Q31.pdf used on input line 85.
+Package pdftex.def Info: figures/GraphP2Q31.pdf used on input line 90.
 (pdftex.def)             Requested size: 455.24408pt x 216.95343pt.
-
-<figures/GraphP2Q32.pdf, id=20, 1027.84pt x 489.83pt>
+ [2 <C:/Users/Simon/Documents/GitHub/ProjetMS2015/figures/Graph_P2Q2.pdf>] <fig
+ures/GraphP2Q32.pdf, id=24, 1027.84pt x 489.83pt>
 File: figures/GraphP2Q32.pdf Graphic file (type pdf)
 
 <use figures/GraphP2Q32.pdf>
-Package pdftex.def Info: figures/GraphP2Q32.pdf used on input line 91.
+Package pdftex.def Info: figures/GraphP2Q32.pdf used on input line 97.
 (pdftex.def)             Requested size: 455.24408pt x 216.95343pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figures/GraphP2Q33.pdf, id=21, 1027.84pt x 489.83pt>
+<figures/GraphP2Q33.pdf, id=25, 1027.84pt x 489.83pt>
 File: figures/GraphP2Q33.pdf Graphic file (type pdf)
 
 <use figures/GraphP2Q33.pdf>
-Package pdftex.def Info: figures/GraphP2Q33.pdf used on input line 97.
+Package pdftex.def Info: figures/GraphP2Q33.pdf used on input line 104.
 (pdftex.def)             Requested size: 455.24408pt x 216.95343pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figures/GraphP2Q34.pdf, id=22, 1027.84pt x 489.83pt>
+ [3 <C:/Users/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q31.pdf> <C:/U
+sers/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q32.pdf>] <figures/Grap
+hP2Q34.pdf, id=37, 1027.84pt x 489.83pt>
 File: figures/GraphP2Q34.pdf Graphic file (type pdf)
 
 <use figures/GraphP2Q34.pdf>
-Package pdftex.def Info: figures/GraphP2Q34.pdf used on input line 103.
+Package pdftex.def Info: figures/GraphP2Q34.pdf used on input line 111.
 (pdftex.def)             Requested size: 455.24408pt x 216.95343pt.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figures/GraphP2Q35.pdf, id=23, 1027.84pt x 489.83pt>
+<figures/GraphP2Q35.pdf, id=38, 1027.84pt x 489.83pt>
 File: figures/GraphP2Q35.pdf Graphic file (type pdf)
 
 <use figures/GraphP2Q35.pdf>
-Package pdftex.def Info: figures/GraphP2Q35.pdf used on input line 109.
+Package pdftex.def Info: figures/GraphP2Q35.pdf used on input line 118.
 (pdftex.def)             Requested size: 455.24408pt x 216.95343pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 113--115
-
- []
-
-[2 <C:/Users/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q31.pdf>]
-Overfull \hbox (9.26242pt too wide) in paragraph at lines 126--130
-[]\OT1/cmr/m/n/12 Moyenne des biais EMV 0.08228447 Moyenne des biais ESBVM -0.1
-193612 Moyenne
- []
-
-
-Overfull \hbox (5.3458pt too wide) in paragraph at lines 130--134
-[]\OT1/cmr/m/n/12 Moyenne des biais EMV 0.1657237 Moyenne des biais ESBVM 0.064
-06643 Moyenne
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 134--139
+ [4 <C:/Users/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q33.pdf> <C:/U
+sers/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q34.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 123--125
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--145
+Underfull \hbox (badness 10000) in paragraph at lines 126--128
 
  []
 
-[3 <C:/Users/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q32.pdf> <C:/Us
-ers/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q33.pdf>]
-<figures/GraphP2Q4.pdf, id=43, 1027.84pt x 489.83pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 139--142
+
+ []
+
+<figures/GraphP2Q4.pdf, id=50, 1027.84pt x 489.83pt>
 File: figures/GraphP2Q4.pdf Graphic file (type pdf)
 
 <use figures/GraphP2Q4.pdf>
-Package pdftex.def Info: figures/GraphP2Q4.pdf used on input line 150.
+Package pdftex.def Info: figures/GraphP2Q4.pdf used on input line 147.
 (pdftex.def)             Requested size: 455.24408pt x 216.95343pt.
- [4 <C:/Users/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q34.pdf> <C:/U
-sers/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q35.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 161--163
+ [5 <C:/Users/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q35.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 155--157
 
  []
 
-<figures/GraphP2Q52.pdf, id=55, 1024.82875pt x 489.83pt>
-File: figures/GraphP2Q52.pdf Graphic file (type pdf)
-
-<use figures/GraphP2Q52.pdf>
-Package pdftex.def Info: figures/GraphP2Q52.pdf used on input line 166.
-(pdftex.def)             Requested size: 455.24408pt x 217.58873pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figures/GraphP2Q53.pdf, id=56, 1024.82875pt x 489.83pt>
-File: figures/GraphP2Q53.pdf Graphic file (type pdf)
-
-<use figures/GraphP2Q53.pdf>
-Package pdftex.def Info: figures/GraphP2Q53.pdf used on input line 172.
-(pdftex.def)             Requested size: 455.24408pt x 217.58873pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figures/GraphP2Q54.pdf, id=57, 1024.82875pt x 489.83pt>
-File: figures/GraphP2Q54.pdf Graphic file (type pdf)
-
-<use figures/GraphP2Q54.pdf>
-Package pdftex.def Info: figures/GraphP2Q54.pdf used on input line 178.
-(pdftex.def)             Requested size: 455.24408pt x 217.58873pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figures/GraphP2Q55.pdf, id=58, 1024.82875pt x 489.83pt>
-File: figures/GraphP2Q55.pdf Graphic file (type pdf)
-
-<use figures/GraphP2Q55.pdf>
-Package pdftex.def Info: figures/GraphP2Q55.pdf used on input line 184.
-(pdftex.def)             Requested size: 455.24408pt x 217.58873pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<figures/GraphP2Q51.pdf, id=59, 1024.82875pt x 489.83pt>
+<figures/GraphP2Q51.pdf, id=58, 1024.82875pt x 489.83pt>
 File: figures/GraphP2Q51.pdf Graphic file (type pdf)
 
 <use figures/GraphP2Q51.pdf>
-Package pdftex.def Info: figures/GraphP2Q51.pdf used on input line 192.
+Package pdftex.def Info: figures/GraphP2Q51.pdf used on input line 165.
 (pdftex.def)             Requested size: 455.24408pt x 217.58873pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 161--167
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+ []
 
-[5 <C:/Users/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q4.pdf>]
-[6 <C:/Users/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q52.pdf> <C:/Us
-ers/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q53.pdf>] [7 <C:/Users/S
-imon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q54.pdf> <C:/Users/Simon/Docu
-ments/GitHub/ProjetMS2015/figures/GraphP2Q55.pdf>] [8 <C:/Users/Simon/Documents
-/GitHub/ProjetMS2015/figures/GraphP2Q51.pdf>]
-(C:\Users\Simon\Documents\GitHub\ProjetMS2015\Rapport.aux) ) 
+[6 <C:/Users/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q4.pdf>]
+<figures/GraphP2Q52.pdf, id=70, 1027.84pt x 489.83pt>
+File: figures/GraphP2Q52.pdf Graphic file (type pdf)
+
+<use figures/GraphP2Q52.pdf>
+Package pdftex.def Info: figures/GraphP2Q52.pdf used on input line 171.
+(pdftex.def)             Requested size: 455.24408pt x 216.95343pt.
+
+<figures/GraphP2Q54.pdf, id=71, 1024.82875pt x 489.83pt>
+File: figures/GraphP2Q54.pdf Graphic file (type pdf)
+
+<use figures/GraphP2Q54.pdf>
+Package pdftex.def Info: figures/GraphP2Q54.pdf used on input line 177.
+(pdftex.def)             Requested size: 455.24408pt x 217.58873pt.
+ [7 <C:/Users/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q51.pdf> <C:/U
+sers/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q52.pdf>] <figures/Grap
+hP2Q53.pdf, id=86, 1027.84pt x 489.83pt>
+File: figures/GraphP2Q53.pdf Graphic file (type pdf)
+
+<use figures/GraphP2Q53.pdf>
+Package pdftex.def Info: figures/GraphP2Q53.pdf used on input line 183.
+(pdftex.def)             Requested size: 455.24408pt x 216.95343pt.
+
+<figures/GraphP2Q55.pdf, id=87, 1027.84pt x 489.83pt>
+File: figures/GraphP2Q55.pdf Graphic file (type pdf)
+
+<use figures/GraphP2Q55.pdf>
+Package pdftex.def Info: figures/GraphP2Q55.pdf used on input line 189.
+(pdftex.def)             Requested size: 455.24408pt x 216.95343pt.
+ [8 <C:/Users/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q54.pdf> <C:/U
+sers/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q53.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 195--197
+
+ []
+
+<figures/GraphP2Q61.pdf, id=101, 1027.84pt x 489.83pt>
+File: figures/GraphP2Q61.pdf Graphic file (type pdf)
+
+<use figures/GraphP2Q61.pdf>
+Package pdftex.def Info: figures/GraphP2Q61.pdf used on input line 205.
+(pdftex.def)             Requested size: 455.24408pt x 216.95343pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--207
+
+ []
+
+[9 <C:/Users/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q55.pdf>]
+<figures/GraphP2Q62.pdf, id=110, 1027.84pt x 489.83pt>
+File: figures/GraphP2Q62.pdf Graphic file (type pdf)
+
+<use figures/GraphP2Q62.pdf>
+Package pdftex.def Info: figures/GraphP2Q62.pdf used on input line 211.
+(pdftex.def)             Requested size: 455.24408pt x 216.95343pt.
+ [10 <C:/Users/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q61.pdf> <C:/
+Users/Simon/Documents/GitHub/ProjetMS2015/figures/GraphP2Q62.pdf>] (C:\Users\Si
+mon\Documents\GitHub\ProjetMS2015\Rapport.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2998 strings out of 493921
- 39039 string characters out of 3146079
- 97280 words of memory out of 3000000
- 6242 multiletter control sequences out of 15000+200000
+ 3076 strings out of 493921
+ 40145 string characters out of 3146079
+ 99718 words of memory out of 3000000
+ 6314 multiletter control sequences out of 15000+200000
  12499 words of font info for 52 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,6n,43p,719b,316s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/Simon/Doc
-uments/Latex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Simon/Document
-s/Latex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Users/Simon/Documents/La
-tex/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Simon/Documents/Latex/f
-onts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Simon/Documents/Latex/fonts/
-type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Simon/Documents/Latex/fonts/type1/
-public/amsfonts/cm/cmr12.pfb><C:/Users/Simon/Documents/Latex/fonts/type1/public
-/amsfonts/cm/cmr17.pfb><C:/Users/Simon/Documents/Latex/fonts/type1/public/amsfo
-nts/cm/cmr8.pfb><C:/Users/Simon/Documents/Latex/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb><C:/Users/Simon/Documents/Latex/fonts/type1/public/amsfonts/cm/cmsy8
-.pfb><C:/Users/Simon/Documents/Latex/fonts/type1/public/amsfonts/symbols/msam10
-.pfb><C:/Users/Simon/Documents/Latex/fonts/type1/public/amsfonts/symbols/msbm10
-.pfb>
-Output written on Rapport.pdf (8 pages, 162651 bytes).
+ 27i,9n,43p,713b,316s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Simon/Documents/Latex/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:
+/Users/Simon/Documents/Latex/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Use
+rs/Simon/Documents/Latex/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Si
+mon/Documents/Latex/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Simon/D
+ocuments/Latex/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Simon/Documen
+ts/Latex/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Simon/Documents/Lat
+ex/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Simon/Documents/Latex/fon
+ts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Simon/Documents/Latex/fonts/type
+1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Simon/Documents/Latex/fonts/type1/pub
+lic/amsfonts/cm/cmsy8.pfb><C:/Users/Simon/Documents/Latex/fonts/type1/public/am
+sfonts/symbols/msam10.pfb><C:/Users/Simon/Documents/Latex/fonts/type1/public/am
+sfonts/symbols/msbm10.pfb>
+Output written on Rapport.pdf (10 pages, 218362 bytes).
 PDF statistics:
- 144 PDF objects out of 1000 (max. 8388607)
+ 162 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
